@@ -6,11 +6,12 @@ from django.core.management.utils import get_random_secret_key
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = get_random_secret_key()
+SECRET_KEY = os.getenv(
+    'SECRET_KEY', '&25k@3hm-s1d)5c-zu3_45ycih+!5&717(b$*d)zg341xo#p$e')
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['158.160.0.238', '127.0.0.1', 'localhost']
 
 
 INSTALLED_APPS = [
