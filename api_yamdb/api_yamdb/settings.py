@@ -6,7 +6,7 @@ from datetime import timedelta
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv(
-    'SECRET_KEY', '&25k@3hm-s1d)5c-zu3_45ycih+!5&717(b$*d)zg341xo#p$e')
+    'DJANGO_KEY', '&25k@3hm-s1d)5c-zu3_45ycih+!5&717(b$*d)zg341xo#p$e')
 
 DEBUG = False
 
