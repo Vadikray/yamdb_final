@@ -10,11 +10,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = get_random_secret_key()
 
 # SECRET_KEY = os.getenv(
-#     'DJANGO_KEY', '&25k@3hm-s1d)5c-zu3_45ycih+!5&717(b$*d)zg341xo#p$e')
+#     'SECRET_KEY', '&25k@3hm-s1d)5c-zu3_45ycih+!5&717(b$*d)zg341xo#p$e')
 
 DEBUG = False
 
 ALLOWED_HOSTS = ['51.250.30.98', '127.0.0.1', 'localhost']
+# ALLOWED_HOSTS = []
 
 
 INSTALLED_APPS = [
