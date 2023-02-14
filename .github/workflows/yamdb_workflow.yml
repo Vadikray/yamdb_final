@@ -43,8 +43,8 @@ jobs:
         with:
           push: true
           context: ./api_yamdb/
-          tags: vadikray/api_yamdb:v1.0
-          file: api_yamdb/Dockerfile   
+          tags: vadikray/api_yamdb:latest
+          # file: api_yamdb/Dockerfile   
   deploy:
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
@@ -58,7 +58,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
-            sudo docker pull vadikray/api_yamdb:v1.0
+            sudo docker pull vadikray/api_yamdb:latest
             sudo docker compose stop
             sudo docker compose rm web
             touch .env

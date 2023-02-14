@@ -14,7 +14,7 @@ SECRET_KEY = get_random_secret_key()
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['51.250.25.0', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['84.252.140.229', '127.0.0.1', 'localhost']
 # ALLOWED_HOSTS = []
 
 
@@ -64,7 +64,12 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'api_yamdb.wsgi.application'
 
-
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 DATABASES = {
     'default': {
         'ENGINE': os.getenv('DB_ENGINE', 'django.db.backends.postgresql'),
