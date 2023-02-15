@@ -7,15 +7,12 @@ from django.core.management.utils import get_random_secret_key
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = get_random_secret_key()
 
-# SECRET_KEY = os.getenv(
-#     'SECRET_KEY', '&25k@3hm-s1d)5c-zu3_45ycih+!5&717(b$*d)zg341xo#p$e')
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['51.250.102.201', '127.0.0.1', 'localhost', '*', ]
-# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['84.201.136.205', '127.0.0.1', 'localhost', '*', ]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
