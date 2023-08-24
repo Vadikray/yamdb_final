@@ -42,4 +42,5 @@ DB_HOST=db
 DB_PORT=5432
 DJANGO_KEY=&25k@3hm-s1d)5c-zu3_45ycih+!5&717(b$*d)zg341xo#p$e
 ```
-# Автор: Конюшков В.А.
+## Автор
+[Конюшков В.А.](https://t.me/Vadikray)
